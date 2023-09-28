@@ -1,0 +1,36 @@
+	
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+.header {
+	background-color: grey;
+	height: 200px;
+}
+
+.header-img {
+	width: 100%;
+	height: inherit;
+	
+	object-fit: cover;
+}
+
+.middle {
+	height: 639px;
+	max-width: 1100px;
+	margin: auto;
+	
+	margin-bottom: 5px;
+}
+
+.footer {
+	height: 30px;
+	max-width: 1100px;
+	margin: auto;
+	
+	padding: 5px;
+	
+}
+
+	

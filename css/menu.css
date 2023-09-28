@@ -1,0 +1,41 @@
+	
+.menu {
+	background-color: lightgrey;
+	border: solid 1px grey;
+	border-top: none;
+}
+
+.menu a {
+	float: left;
+	
+	background-color: darkgrey;
+	color: black;
+	
+	height: 30px;
+	width: 170px;
+	
+	text-align: center;
+	padding: 5px;
+	
+	text-decoration: none;
+	
+	margin-right: 1px;
+}
+
+.menu::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.menu a:hover {
+	background-color: grey;
+	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	.menu a {
+		width: 100%;
+		margin-top: 1px;
+	}
+}

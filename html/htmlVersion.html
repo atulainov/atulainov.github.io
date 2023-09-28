@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Резюме</title>
+
+<style>
+
+	* {
+		box-sizing: border-box;
+		font-family: Arial;
+		
+	}
+	
+	ul {
+		padding: none;
+	}
+	
+	.name, .contact {
+		height: 50px;
+		text-align: center;
+	}
+	
+	.name {
+		font-size: 30px;
+		padding-top: 4px;
+	}
+	
+	.contact {
+		border-top: solid black 1px;
+		padding-top: 14px;
+	}
+	
+	.horizontal-container > div {
+		float: left;
+	}
+	
+	.horizontal-container::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	.img-container {
+		height: 258px;
+		width: 180px;
+		
+		margin-right: 5px;
+	}
+	
+	.img {
+		object-fit: cover;
+		
+		height: 258px;
+		width: 180px;
+		
+		border: solid black 1px;
+	}
+	
+	.right-container {
+		width: calc(100% - 180px - 5px);
+	}
+	
+	.item-container {
+		margin-bottom: 5px;
+		border: solid black 1px;
+	}
+	
+	.head {
+		height: 30px;
+	
+		background-color: rgba(214, 227, 188, 1);
+		
+		font-weight: bold;
+		font-size: 15px;
+		
+		padding: 5px;
+	}
+	
+	.text {
+		border-top: solid black 1px;
+		font-size: 15px;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.right-container {
+			width: 100%;
+		}
+		.img-container {
+			margin-bottom: 5px;
+			margin-left: calc(50% - 90px);
+		}
+		.name {
+			height: 80px;
+		}
+	}
+	
+</style>
+</head>
+
+<body>
+
+	<div class="name">Тулаинов Алексей Алексеевич</div>
+	<div class="contact">a.tulainov@protonmail.com</div>
+	
+	<div class="horizontal-container">
+		<div class="img-container">
+			<a href="../img/big/photo.jpg"><img src="../img/small/photo.jpg" class="img" alt="Photo"></a>
+		</div>
+		
+		<div class="right-container">
+			<div class="item-container">
+				<div class="head">1982 г. р., Бишкек, Кыргызстан</div>
+			</div>
+			
+			<div class="item-container">
+				<div class="head">Образование</div>
+				<div class="text">
+					<ul>
+						<li>2001-2007, Американский Университет в Центральной Азии
+						<ul><li>Проектировка программного обеспечения, бакалавр</ul>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="item-container">
+				<div class="head">Дополнительное образование (не завершенное)</div>
+				<div class="text">
+				<ul>
+					<li>2016-2022, Университет им. Лейбница в Ганновере
+					<ul>
+						<li>Информатика (основной предмет)
+						<li>Экономика (доп. предмет)
+					</ul>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="item-container">
+		<div class="head">Профессиональные навыки</div>
+		<div class="text">
+			<ul>
+				<li>Архитектура и разработка программного обеспечения, баз данных
+				<li>C-based языки программирования (упор на Java)
+				<li>SQL
+			</ul>
+		</div>
+	</div>
+	
+	<div class="item-container">
+		<div class="head">Дополнительные навыки</div>
+		<div class="text">
+			<ul>
+				<li>Английский язык (в совершенстве)
+				<li>Немецкий язык (в совершенстве, DSH3)
+				<li>HTML, CSS
+				<li>Офисное ПО (Word, Excel), Git, JIRA
+				<li>Слепая печать: 50 wpm (английский, немецкий, программный код)
+			</ul>
+		</div>
+	</div>
+	
+	<div class="item-container">
+		<div class="head">Опыт работы</div>
+		<div class="text">
+		<ul>
+			<li>2001-2002, Ассистент компьютерной лаборатории, АУЦА
+			<li>2004-2015, Компьютерный специалист, Медицинский центр «Научмедлайт»
+			<li>2009-2010, Инженер тестировщик, «Complete Quality Center»
+		</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
